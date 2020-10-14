@@ -1,0 +1,15 @@
+const router = async () => {
+  const routes = [
+    { path: '/', view: () => console.log('main') },
+    { path: '/papier', view: () => console.log('papier') },
+    { path: '/household', view: () => console.log('household') },
+    { path: '/goods', view: () => console.log('goods') },
+  ]
+  console.log(routes)
+}
+
+router()
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('loaded')
+})

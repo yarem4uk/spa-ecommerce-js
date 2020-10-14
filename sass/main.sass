@@ -3,6 +3,13 @@
 body
   font-family: $secondFont, sans-serif
 
+  #app
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+
 .container
   display: flex
   flex-direction: column
@@ -13,7 +20,18 @@ header
   flex-basis: 15%
   flex-shrink: 0
   width: 100%
-  background-color: tomato
+  background-color: $headerColor
+
+  .main-header__list
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    height: 100%
+    & a
+      color: $mainBlack
+    & a:hover
+        color: white
 
 main
   display: flex
@@ -26,16 +44,14 @@ main
   flex-basis: 22%
   flex-shrink: 0
   height: 100%
-  background-color: mediumseagreen
-  // background-color: palevioletred
+  background-color: $sidebarColor
 
 .products
   flex-grow: 1
-  background-color: powderblue
+  background-color: $productsColor
 
 footer
   flex-basis: 15%
   flex-shrink: 0
   width: 100%
-  // background-color: #333
-  background-color: mediumpurple
+  background-color: $footerColor
